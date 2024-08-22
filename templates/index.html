@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Chatbot</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PDF Chatbot</h1>
+
+        <form id="uploadForm">
+            <input type="file" id="pdfFile" accept=".pdf" required>
+            <button type="submit">Upload PDF</button>
+        </form>
+
+        <div id="textArea">
+            <textarea id="pdfText" placeholder="PDF text will appear here..." rows="10" readonly></textarea>
+        </div>
+
+        <div id="chatArea">
+            <input type="text" id="queryInput" placeholder="Ask a question..." />
+            <button id="askButton">Ask</button>
+            <div id="responseArea"></div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
